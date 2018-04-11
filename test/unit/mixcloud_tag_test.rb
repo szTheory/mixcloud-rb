@@ -19,7 +19,7 @@ class TestMixCloudTag < Test::Unit::TestCase
   end
   
   def test_tag_has_metadata
-    assert_block { @tag.metadata.size.is_a?(Fixnum) }
+    assert_block { @tag.metadata.size.is_a?(Integer) }
   end
   
   def test_tag_metadata_properties
@@ -32,7 +32,7 @@ class TestMixCloudTag < Test::Unit::TestCase
   
   def test_tag_popular
     VCR.use_cassette("popular") do
-      assert_block { @tag.popular.length.is_a?(Fixnum) }
+      assert_block { @tag.popular.length.is_a?(Integer) }
     end
   end
   

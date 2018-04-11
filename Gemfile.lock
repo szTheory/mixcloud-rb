@@ -36,7 +36,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  hashie (~> 2.1.2)
+  hashie (~> 2.1, >= 2.1.2)
   httparty (~> 0.13.7)
   mixcloud-rb!
   pry

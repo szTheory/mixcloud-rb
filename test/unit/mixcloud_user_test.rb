@@ -35,11 +35,11 @@ class TestMixCloudUser < Test::Unit::TestCase
   def test_user_properties        
     assert_equal(USERNAME, @user.username)
     assert_equal('London', @user.city)
-    assert_block { @user.cloudcast_count.is_a?(Fixnum) }
-    assert_block { @user.following_count.is_a?(Fixnum) }
+    assert_block { @user.cloudcast_count.is_a?(Integer) }
+    assert_block { @user.following_count.is_a?(Integer) }
     assert_equal("https://www.mixcloud.com/#{USERNAME}/", @user.url)    
-    assert_block { @user.pictures.length.is_a?(Fixnum) }
-    assert_block { @user.listen_count.is_a?(Fixnum) }
+    assert_block { @user.pictures.length.is_a?(Integer) }
+    assert_block { @user.listen_count.is_a?(Integer) }
     assert_equal("Part of the Mixcloud team - since Mixcloud was just a good idea.", @user.biog, )
     assert_equal("/#{USERNAME}/", @user.key)    
     assert_equal("United Kingdom", @user.country)
@@ -48,7 +48,7 @@ class TestMixCloudUser < Test::Unit::TestCase
   end
   
   def test_user_has_metadata
-    assert_block { @user.metadata.size.is_a?(Fixnum) }
+    assert_block { @user.metadata.size.is_a?(Integer) }
   end
   
   def test_user_metadata_properties
@@ -61,7 +61,7 @@ class TestMixCloudUser < Test::Unit::TestCase
   end
   
   def test_user_feed_properties
-    assert_block { @user_feed['data'].length.is_a?(Fixnum) }
+    assert_block { @user_feed['data'].length.is_a?(Integer) }
     assert_equal("https://www.mixcloud.com/#{USERNAME}/", @user_feed['data'][0]['from']['url'])    
   end
   
