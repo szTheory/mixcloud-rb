@@ -12,20 +12,23 @@ module MixCloud
       
     property :username
     property :city
-    property :cloudcast_count
-    property :following_count              
-    property :url          
-    property :pictures, :defaul => {}            
+    property :favorite_count
+    property :name
+    property :following_count
+    property :url
+    property :pictures, :default => {}
     property :listen_count
     property :updated_time
-    property :created_time           
+    property :is_premium
+    property :created_time
+    property :cover_pictures
     property :biog
     property :key
     property :country
-    property :follower_count                      
-    property :favorite_count
-    property :country 
-    property :name
+    property :follower_count
+    property :picture_primary_color
+    property :is_pro
+    property :cloudcast_count
     property :type
     property :metadata, :default => {}
             
@@ -39,10 +42,9 @@ module MixCloud
       @user['metadata'].delete('connections')
       
       @user['metadata'].each do |k,v|
-        self.class.send(:define_method, "#{k}".downcase) do |options|
-          options = options ||= @options                  
-          self.class.get("#{self.metadata[k.to_sym]}", :query => @options)          
-         end
+        self.send(:define_singleton_method, "#{k}".downcase) do |opts={}|
+          self.class.get("#{self.metadata[k.to_sym]}", :query => opts || @options)          
+        end
       end
             
       super @user
@@ -51,6 +53,5 @@ module MixCloud
     def self.find(user_name, options={})
       self.new user_name, options
     end
-
   end  
 end

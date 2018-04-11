@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.version = MixCloud::VERSION
   s.platform    = Gem::Platform::RUBY
   s.required_rubygems_version = ">= 1.3.6"
-  s.authors = ["Joao Da Silva"]
-  s.date = %q{2011-03-29}
+  s.authors = ["Joao Da Silva", "szTheory"]
+  s.date = %q{2018-04-10}
   s.description = %q{Ruby wrapper for the mixcloud.com API}
   s.email = %q{joao@codedefinition.com}
   s.files = Dir.glob("{lib}/**/*")
@@ -20,5 +20,6 @@ Gem::Specification.new do |s|
   s.summary = %q{Ruby wrapper for the mixcloud.com API}
   s.test_files = Dir.glob("{test}/**/*")
 
-  s.add_bundler_dependencies
+  s.add_development_dependency 'hashie', '~>0.2.0'
+  s.add_development_dependency 'httparty', '~>0.13.7'
 end

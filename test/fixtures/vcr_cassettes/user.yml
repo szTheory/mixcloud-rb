@@ -1,0 +1,104 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.mixcloud.com/spartacus?limit=1&metadata=1&offset=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 11 Apr 2018 00:39:26 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Request-Id:
+      - 5bee44c1b489d63cedd2c1e462d897ed
+      Location:
+      - /spartacus/?metadata=1&limit=1&offset=1&metadata=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    http_version: 
+  recorded_at: Wed, 11 Apr 2018 00:39:26 GMT
+- request:
+    method: get
+    uri: http://api.mixcloud.com/spartacus/?limit=1&metadata=1&offset=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 11 Apr 2018 00:39:26 GMT
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Content-Length:
+      - '2698'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Request-Id:
+      - d6a298e98c9b817e12ce677b42fdc276
+      Access-Control-Allow-Origin:
+      - ! '*'
+    body:
+      encoding: US-ASCII
+      string: ! "{\n    \"username\": \"spartacus\", \n    \"city\": \"London\", \n
+        \   \"favorite_count\": 74, \n    \"name\": \"Spartacus\", \n    \"following_count\":
+        101, \n    \"url\": \"https://www.mixcloud.com/spartacus/\", \n    \"pictures\":
+        {\n        \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n        \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n        \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n        \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n        \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n        \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n        \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n        \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\"\n
+        \   }, \n    \"listen_count\": 2310, \n    \"updated_time\": \"2009-03-10T07:32:56Z\",
+        \n    \"is_premium\": false, \n    \"created_time\": \"2009-03-10T07:32:56Z\",
+        \n    \"cover_pictures\": {\n        \"1113wx160h\": \"https://thumbnailer.mixcloud.com/unsafe/1113x160/profile_cover/d/b/9/0/4328-5114-4c10-adcb-613d0c92337f.jpg\",
+        \n        \"1670wx240h\": \"https://thumbnailer.mixcloud.com/unsafe/1670x240/profile_cover/d/b/9/0/4328-5114-4c10-adcb-613d0c92337f.jpg\",
+        \n        \"835wx120h\": \"https://thumbnailer.mixcloud.com/unsafe/835x120/profile_cover/d/b/9/0/4328-5114-4c10-adcb-613d0c92337f.jpg\"\n
+        \   }, \n    \"biog\": \"Part of the Mixcloud team - since Mixcloud was just
+        a good idea.\", \n    \"key\": \"/spartacus/\", \n    \"country\": \"United
+        Kingdom\", \n    \"follower_count\": 733, \n    \"picture_primary_color\":
+        \"1f2d32\", \n    \"metadata\": {\n        \"connections\": {\n            \"feed\":
+        \"http://api.mixcloud.com/spartacus/feed/\", \n            \"playlists\":
+        \"http://api.mixcloud.com/spartacus/playlists/\", \n            \"comments\":
+        \"http://api.mixcloud.com/spartacus/comments/\", \n            \"followers\":
+        \"http://api.mixcloud.com/spartacus/followers/\", \n            \"favorites\":
+        \"http://api.mixcloud.com/spartacus/favorites/\", \n            \"following\":
+        \"http://api.mixcloud.com/spartacus/following/\", \n            \"cloudcasts\":
+        \"http://api.mixcloud.com/spartacus/cloudcasts/\", \n            \"listens\":
+        \"http://api.mixcloud.com/spartacus/listens/\"\n        }\n    }, \n    \"type\":
+        \"user\", \n    \"is_pro\": false, \n    \"cloudcast_count\": 5\n}"
+    http_version: 
+  recorded_at: Wed, 11 Apr 2018 00:39:27 GMT
+recorded_with: VCR 4.0.0

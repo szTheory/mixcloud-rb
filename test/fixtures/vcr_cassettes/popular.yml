@@ -1,0 +1,173 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.mixcloud.com/discover/funk/popular/?limit=1&metadata=1&offset=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 11 Apr 2018 00:43:50 GMT
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Content-Length:
+      - '4750'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Request-Id:
+      - 2630b9d8edc986941e40492396fde307
+      Access-Control-Allow-Origin:
+      - ! '*'
+    body:
+      encoding: US-ASCII
+      string: ! "{\n    \"paging\": {\n        \"previous\": \"http://api.mixcloud.com/discover/funk/popular/?limit=1&metadata=1&offset=0\",
+        \n        \"next\": \"http://api.mixcloud.com/discover/funk/popular/?limit=1&metadata=1&offset=2\"\n
+        \   }, \n    \"data\": [\n        {\n            \"tags\": [\n                {\n
+        \                   \"url\": \"https://www.mixcloud.com/discover/soul/\",
+        \n                    \"type\": \"tag\", \n                    \"name\": \"Soul\",
+        \n                    \"key\": \"/discover/soul/\"\n                }, \n
+        \               {\n                    \"url\": \"https://www.mixcloud.com/discover/funk-soul-jazz/\",
+        \n                    \"type\": \"tag\", \n                    \"name\": \"Funk
+        - Soul  - Jazz\", \n                    \"key\": \"/discover/funk-soul-jazz/\"\n
+        \               }, \n                {\n                    \"url\": \"https://www.mixcloud.com/discover/re-edits/\",
+        \n                    \"type\": \"tag\", \n                    \"name\": \"Re-edits\",
+        \n                    \"key\": \"/discover/re-edits/\"\n                },
+        \n                {\n                    \"url\": \"https://www.mixcloud.com/discover/disco/\",
+        \n                    \"type\": \"tag\", \n                    \"name\": \"Disco\",
+        \n                    \"key\": \"/discover/disco/\"\n                }, \n
+        \               {\n                    \"url\": \"https://www.mixcloud.com/discover/funk/\",
+        \n                    \"type\": \"tag\", \n                    \"name\": \"Funk\",
+        \n                    \"key\": \"/discover/funk/\"\n                }\n            ],
+        \n            \"play_count\": 131389, \n            \"user\": {\n                \"username\":
+        \"maxvibes\", \n                \"name\": \"Jazzcat\", \n                \"url\":
+        \"https://www.mixcloud.com/maxvibes/\", \n                \"pictures\": {\n
+        \                   \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\",
+        \n                    \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\",
+        \n                    \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\",
+        \n                    \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\",
+        \n                    \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\",
+        \n                    \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\",
+        \n                    \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\",
+        \n                    \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\"\n
+        \               }, \n                \"key\": \"/maxvibes/\", \n                \"type\":
+        \"user\"\n            }, \n            \"key\": \"/maxvibes/soul-trip/\",
+        \n            \"created_time\": \"2014-12-12T12:16:05Z\", \n            \"audio_length\":
+        4408, \n            \"slug\": \"soul-trip\", \n            \"favorite_count\":
+        5651, \n            \"listener_count\": 48841, \n            \"name\": \"Soul
+        trip\", \n            \"url\": \"https://www.mixcloud.com/maxvibes/soul-trip/\",
+        \n            \"pictures\": {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"768wx768h\": \"https://thumbnailer.mixcloud.com/unsafe/768x768/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"1024wx1024h\": \"https://thumbnailer.mixcloud.com/unsafe/1024x1024/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\"\n
+        \           }, \n            \"repost_count\": 823, \n            \"updated_time\":
+        \"2014-12-12T11:58:58Z\", \n            \"comment_count\": 186, \n            \"type\":
+        \"cloudcast\"\n        }\n    ]\n}"
+    http_version: 
+  recorded_at: Wed, 11 Apr 2018 00:43:50 GMT
+- request:
+    method: get
+    uri: http://api.mixcloud.com/discover/funk/popular/?limit=1&metadata=1&offset=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 11 Apr 2018 00:43:52 GMT
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Content-Length:
+      - '4750'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Request-Id:
+      - d43ac2e322440acbad9f6d23218d53db
+      Access-Control-Allow-Origin:
+      - ! '*'
+    body:
+      encoding: US-ASCII
+      string: ! "{\n    \"paging\": {\n        \"previous\": \"http://api.mixcloud.com/discover/funk/popular/?limit=1&metadata=1&offset=0\",
+        \n        \"next\": \"http://api.mixcloud.com/discover/funk/popular/?limit=1&metadata=1&offset=2\"\n
+        \   }, \n    \"data\": [\n        {\n            \"tags\": [\n                {\n
+        \                   \"url\": \"https://www.mixcloud.com/discover/soul/\",
+        \n                    \"type\": \"tag\", \n                    \"name\": \"Soul\",
+        \n                    \"key\": \"/discover/soul/\"\n                }, \n
+        \               {\n                    \"url\": \"https://www.mixcloud.com/discover/funk-soul-jazz/\",
+        \n                    \"type\": \"tag\", \n                    \"name\": \"Funk
+        - Soul  - Jazz\", \n                    \"key\": \"/discover/funk-soul-jazz/\"\n
+        \               }, \n                {\n                    \"url\": \"https://www.mixcloud.com/discover/re-edits/\",
+        \n                    \"type\": \"tag\", \n                    \"name\": \"Re-edits\",
+        \n                    \"key\": \"/discover/re-edits/\"\n                },
+        \n                {\n                    \"url\": \"https://www.mixcloud.com/discover/disco/\",
+        \n                    \"type\": \"tag\", \n                    \"name\": \"Disco\",
+        \n                    \"key\": \"/discover/disco/\"\n                }, \n
+        \               {\n                    \"url\": \"https://www.mixcloud.com/discover/funk/\",
+        \n                    \"type\": \"tag\", \n                    \"name\": \"Funk\",
+        \n                    \"key\": \"/discover/funk/\"\n                }\n            ],
+        \n            \"play_count\": 131389, \n            \"user\": {\n                \"username\":
+        \"maxvibes\", \n                \"name\": \"Jazzcat\", \n                \"url\":
+        \"https://www.mixcloud.com/maxvibes/\", \n                \"pictures\": {\n
+        \                   \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\",
+        \n                    \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\",
+        \n                    \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\",
+        \n                    \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\",
+        \n                    \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\",
+        \n                    \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\",
+        \n                    \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\",
+        \n                    \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/1/c/8/a/a47c-4552-4ab3-8a9c-92bc3c4bae32\"\n
+        \               }, \n                \"key\": \"/maxvibes/\", \n                \"type\":
+        \"user\"\n            }, \n            \"key\": \"/maxvibes/soul-trip/\",
+        \n            \"created_time\": \"2014-12-12T12:16:05Z\", \n            \"audio_length\":
+        4408, \n            \"slug\": \"soul-trip\", \n            \"favorite_count\":
+        5651, \n            \"listener_count\": 48841, \n            \"name\": \"Soul
+        trip\", \n            \"url\": \"https://www.mixcloud.com/maxvibes/soul-trip/\",
+        \n            \"pictures\": {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"768wx768h\": \"https://thumbnailer.mixcloud.com/unsafe/768x768/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"1024wx1024h\": \"https://thumbnailer.mixcloud.com/unsafe/1024x1024/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/extaudio/5/3/4/c/c55d-8ba6-4d14-8ce3-3f971154764c.jpg\"\n
+        \           }, \n            \"repost_count\": 823, \n            \"updated_time\":
+        \"2014-12-12T11:58:58Z\", \n            \"comment_count\": 186, \n            \"type\":
+        \"cloudcast\"\n        }\n    ]\n}"
+    http_version: 
+  recorded_at: Wed, 11 Apr 2018 00:43:52 GMT
+recorded_with: VCR 4.0.0

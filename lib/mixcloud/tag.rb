@@ -20,7 +20,7 @@ module MixCloud
         
     def initialize(tag_name, options={})
       @options = options
-      @tag = self.class.get("/tag/#{tag_name}", :query => @options)
+      @tag = self.class.get("/tag/#{tag_name}?metadata=1", :query => @options)
       
       @tag['metadata']['connections'].each do |k,v|
         @tag['metadata'][k.to_sym] = v
@@ -31,9 +31,7 @@ module MixCloud
     end
     
     def popular(options=nil)      
-      options = options ||= @options            
-      self.popular = self.class.get("#{self[:key]}popular/", :query => options)
-    end
-    
+      self.popular = self.class.get("#{self[:key]}popular/", :query => options || @options)
+    end 
   end  
 end

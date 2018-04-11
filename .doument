@@ -1,8 +1,0 @@
-.autotest
-.document
-changelog.txt
-README.txt
-Rakefile
-bin/*
-lib/**/*.rb
-test/test_sapo.rb

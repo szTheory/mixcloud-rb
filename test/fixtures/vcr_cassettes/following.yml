@@ -1,0 +1,263 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.mixcloud.com/spartacus/following/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 11 Apr 2018 00:42:06 GMT
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Content-Length:
+      - '25805'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Request-Id:
+      - 0f28a15f0b98baccf73dd7ed580660ff
+      Access-Control-Allow-Origin:
+      - ! '*'
+    body:
+      encoding: US-ASCII
+      string: ! "{\n    \"paging\": {\n        \"previous\": \"http://api.mixcloud.com/spartacus/following/?limit=20&since=2017-07-13+15%3A04%3A48\",
+        \n        \"next\": \"http://api.mixcloud.com/spartacus/following/?limit=20&until=2015-01-06+11%3A32%3A10\"\n
+        \   }, \n    \"data\": [\n        {\n            \"url\": \"https://www.mixcloud.com/chromacast/\",
+        \n            \"username\": \"chromacast\", \n            \"name\": \"Chromacast\",
+        \n            \"key\": \"/chromacast/\", \n            \"pictures\": {\n                \"medium\":
+        \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/f/d/2/a/2e74-34bb-4611-8c3a-253a9e1cd675\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/f/d/2/a/2e74-34bb-4611-8c3a-253a9e1cd675\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/f/d/2/a/2e74-34bb-4611-8c3a-253a9e1cd675\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/f/d/2/a/2e74-34bb-4611-8c3a-253a9e1cd675\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/f/d/2/a/2e74-34bb-4611-8c3a-253a9e1cd675\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/f/d/2/a/2e74-34bb-4611-8c3a-253a9e1cd675\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/f/d/2/a/2e74-34bb-4611-8c3a-253a9e1cd675\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/f/d/2/a/2e74-34bb-4611-8c3a-253a9e1cd675\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/NourishPodcast/\",
+        \n            \"username\": \"NourishPodcast\", \n            \"name\": \"Nourish\",
+        \n            \"key\": \"/NourishPodcast/\", \n            \"pictures\": {\n
+        \               \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/3/a/3/5/7d8a-3dca-49a0-bea0-ef4febe7a977\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/3/a/3/5/7d8a-3dca-49a0-bea0-ef4febe7a977\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/3/a/3/5/7d8a-3dca-49a0-bea0-ef4febe7a977\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/3/a/3/5/7d8a-3dca-49a0-bea0-ef4febe7a977\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/3/a/3/5/7d8a-3dca-49a0-bea0-ef4febe7a977\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/3/a/3/5/7d8a-3dca-49a0-bea0-ef4febe7a977\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/3/a/3/5/7d8a-3dca-49a0-bea0-ef4febe7a977\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/3/a/3/5/7d8a-3dca-49a0-bea0-ef4febe7a977\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/audioculture/\",
+        \n            \"username\": \"audioculture\", \n            \"name\": \"Audio
+        Culture\", \n            \"key\": \"/audioculture/\", \n            \"pictures\":
+        {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/9/3/8/3/ab81-e17f-49ec-a143-980d8fbf8c8f\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/9/3/8/3/ab81-e17f-49ec-a143-980d8fbf8c8f\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/9/3/8/3/ab81-e17f-49ec-a143-980d8fbf8c8f\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/9/3/8/3/ab81-e17f-49ec-a143-980d8fbf8c8f\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/9/3/8/3/ab81-e17f-49ec-a143-980d8fbf8c8f\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/9/3/8/3/ab81-e17f-49ec-a143-980d8fbf8c8f\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/9/3/8/3/ab81-e17f-49ec-a143-980d8fbf8c8f\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/9/3/8/3/ab81-e17f-49ec-a143-980d8fbf8c8f\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/jon/\",
+        \n            \"username\": \"jon\", \n            \"name\": \"Jonathan King\",
+        \n            \"key\": \"/jon/\", \n            \"pictures\": {\n                \"medium\":
+        \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/e/2/3/0/4590-e1aa-49cf-86cd-3661fff4abfc\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/e/2/3/0/4590-e1aa-49cf-86cd-3661fff4abfc\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/e/2/3/0/4590-e1aa-49cf-86cd-3661fff4abfc\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/e/2/3/0/4590-e1aa-49cf-86cd-3661fff4abfc\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/e/2/3/0/4590-e1aa-49cf-86cd-3661fff4abfc\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/e/2/3/0/4590-e1aa-49cf-86cd-3661fff4abfc\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/e/2/3/0/4590-e1aa-49cf-86cd-3661fff4abfc\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/e/2/3/0/4590-e1aa-49cf-86cd-3661fff4abfc\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/DasPlanetarium/\",
+        \n            \"username\": \"DasPlanetarium\", \n            \"name\": \"Planetarium
+        (Helioscope)\", \n            \"key\": \"/DasPlanetarium/\", \n            \"pictures\":
+        {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/2/1/6/1/35f6-6dc4-4e57-9300-1f4c3e4f6d5d.jpg\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/2/1/6/1/35f6-6dc4-4e57-9300-1f4c3e4f6d5d.jpg\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/2/1/6/1/35f6-6dc4-4e57-9300-1f4c3e4f6d5d.jpg\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/2/1/6/1/35f6-6dc4-4e57-9300-1f4c3e4f6d5d.jpg\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/2/1/6/1/35f6-6dc4-4e57-9300-1f4c3e4f6d5d.jpg\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/2/1/6/1/35f6-6dc4-4e57-9300-1f4c3e4f6d5d.jpg\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/2/1/6/1/35f6-6dc4-4e57-9300-1f4c3e4f6d5d.jpg\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/2/1/6/1/35f6-6dc4-4e57-9300-1f4c3e4f6d5d.jpg\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/Master_of_Instrumental/\",
+        \n            \"username\": \"Master_of_Instrumental\", \n            \"name\":
+        \"Master of Instrumental\", \n            \"key\": \"/Master_of_Instrumental/\",
+        \n            \"pictures\": {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/c/0/8/3/16b8-1119-4a55-a974-0235ee8ac0a3.png\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/c/0/8/3/16b8-1119-4a55-a974-0235ee8ac0a3.png\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/c/0/8/3/16b8-1119-4a55-a974-0235ee8ac0a3.png\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/c/0/8/3/16b8-1119-4a55-a974-0235ee8ac0a3.png\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/c/0/8/3/16b8-1119-4a55-a974-0235ee8ac0a3.png\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/c/0/8/3/16b8-1119-4a55-a974-0235ee8ac0a3.png\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/c/0/8/3/16b8-1119-4a55-a974-0235ee8ac0a3.png\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/c/0/8/3/16b8-1119-4a55-a974-0235ee8ac0a3.png\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/hellointernet2/\",
+        \n            \"username\": \"hellointernet2\", \n            \"name\": \"Hello
+        Internet\", \n            \"key\": \"/hellointernet2/\", \n            \"pictures\":
+        {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/2/8/6/d/80fd-f4bc-4810-a605-ba673e3fbdfb\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/2/8/6/d/80fd-f4bc-4810-a605-ba673e3fbdfb\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/2/8/6/d/80fd-f4bc-4810-a605-ba673e3fbdfb\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/2/8/6/d/80fd-f4bc-4810-a605-ba673e3fbdfb\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/2/8/6/d/80fd-f4bc-4810-a605-ba673e3fbdfb\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/2/8/6/d/80fd-f4bc-4810-a605-ba673e3fbdfb\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/2/8/6/d/80fd-f4bc-4810-a605-ba673e3fbdfb\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/2/8/6/d/80fd-f4bc-4810-a605-ba673e3fbdfb\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/cloud_atlas/\",
+        \n            \"username\": \"cloud_atlas\", \n            \"name\": \"Cloud
+        Atlas\", \n            \"key\": \"/cloud_atlas/\", \n            \"pictures\":
+        {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/4/4/2/a/7fd6-13d2-45af-92f9-17914ad16267.jpg\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/4/4/2/a/7fd6-13d2-45af-92f9-17914ad16267.jpg\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/4/4/2/a/7fd6-13d2-45af-92f9-17914ad16267.jpg\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/4/4/2/a/7fd6-13d2-45af-92f9-17914ad16267.jpg\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/4/4/2/a/7fd6-13d2-45af-92f9-17914ad16267.jpg\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/4/4/2/a/7fd6-13d2-45af-92f9-17914ad16267.jpg\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/4/4/2/a/7fd6-13d2-45af-92f9-17914ad16267.jpg\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/4/4/2/a/7fd6-13d2-45af-92f9-17914ad16267.jpg\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/WILDLIFE/\",
+        \n            \"username\": \"WILDLIFE\", \n            \"name\": \"WILD LIFE\",
+        \n            \"key\": \"/WILDLIFE/\", \n            \"pictures\": {\n                \"medium\":
+        \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/e/b/c/4/c518-d283-4070-b15f-425ca143ef9d\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/e/b/c/4/c518-d283-4070-b15f-425ca143ef9d\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/e/b/c/4/c518-d283-4070-b15f-425ca143ef9d\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/e/b/c/4/c518-d283-4070-b15f-425ca143ef9d\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/e/b/c/4/c518-d283-4070-b15f-425ca143ef9d\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/e/b/c/4/c518-d283-4070-b15f-425ca143ef9d\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/e/b/c/4/c518-d283-4070-b15f-425ca143ef9d\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/e/b/c/4/c518-d283-4070-b15f-425ca143ef9d\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/relevantpodcast/\",
+        \n            \"username\": \"relevantpodcast\", \n            \"name\": \"RELEVANT
+        Podcast\", \n            \"key\": \"/relevantpodcast/\", \n            \"pictures\":
+        {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/5/9/9/8/3892-25ef-4ce9-9cb1-9b0cf3d4627e\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/5/9/9/8/3892-25ef-4ce9-9cb1-9b0cf3d4627e\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/5/9/9/8/3892-25ef-4ce9-9cb1-9b0cf3d4627e\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/5/9/9/8/3892-25ef-4ce9-9cb1-9b0cf3d4627e\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/5/9/9/8/3892-25ef-4ce9-9cb1-9b0cf3d4627e\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/5/9/9/8/3892-25ef-4ce9-9cb1-9b0cf3d4627e\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/5/9/9/8/3892-25ef-4ce9-9cb1-9b0cf3d4627e\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/5/9/9/8/3892-25ef-4ce9-9cb1-9b0cf3d4627e\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/DecibelFestival/\",
+        \n            \"username\": \"DecibelFestival\", \n            \"name\": \"Decibel
+        Festival\", \n            \"key\": \"/DecibelFestival/\", \n            \"pictures\":
+        {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/2/b/4/7/ab6d-88de-4d39-8638-2d62923c50af.png\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/2/b/4/7/ab6d-88de-4d39-8638-2d62923c50af.png\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/2/b/4/7/ab6d-88de-4d39-8638-2d62923c50af.png\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/2/b/4/7/ab6d-88de-4d39-8638-2d62923c50af.png\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/2/b/4/7/ab6d-88de-4d39-8638-2d62923c50af.png\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/2/b/4/7/ab6d-88de-4d39-8638-2d62923c50af.png\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/2/b/4/7/ab6d-88de-4d39-8638-2d62923c50af.png\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/2/b/4/7/ab6d-88de-4d39-8638-2d62923c50af.png\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/jmcdaris/\",
+        \n            \"username\": \"jmcdaris\", \n            \"name\": \"jmcdaris\",
+        \n            \"key\": \"/jmcdaris/\", \n            \"pictures\": {\n                \"medium\":
+        \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/1/3/0/3/eda8-85db-42c9-af11-83d63f8121a8.jpg\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/1/3/0/3/eda8-85db-42c9-af11-83d63f8121a8.jpg\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/1/3/0/3/eda8-85db-42c9-af11-83d63f8121a8.jpg\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/1/3/0/3/eda8-85db-42c9-af11-83d63f8121a8.jpg\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/1/3/0/3/eda8-85db-42c9-af11-83d63f8121a8.jpg\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/1/3/0/3/eda8-85db-42c9-af11-83d63f8121a8.jpg\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/1/3/0/3/eda8-85db-42c9-af11-83d63f8121a8.jpg\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/1/3/0/3/eda8-85db-42c9-af11-83d63f8121a8.jpg\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/boci/\",
+        \n            \"username\": \"boci\", \n            \"name\": \"B\\u00d8C\",
+        \n            \"key\": \"/boci/\", \n            \"pictures\": {\n                \"medium\":
+        \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/7/4/2/9/b4c2-b404-433d-a0a7-7d245551bafb\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/7/4/2/9/b4c2-b404-433d-a0a7-7d245551bafb\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/7/4/2/9/b4c2-b404-433d-a0a7-7d245551bafb\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/7/4/2/9/b4c2-b404-433d-a0a7-7d245551bafb\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/7/4/2/9/b4c2-b404-433d-a0a7-7d245551bafb\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/7/4/2/9/b4c2-b404-433d-a0a7-7d245551bafb\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/7/4/2/9/b4c2-b404-433d-a0a7-7d245551bafb\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/7/4/2/9/b4c2-b404-433d-a0a7-7d245551bafb\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/jefftovar/\",
+        \n            \"username\": \"jefftovar\", \n            \"name\": \"Jeff
+        Tovar\", \n            \"key\": \"/jefftovar/\", \n            \"pictures\":
+        {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/5/2/c/0/ab05-271e-498c-8230-ee36e21e9a47\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/5/2/c/0/ab05-271e-498c-8230-ee36e21e9a47\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/5/2/c/0/ab05-271e-498c-8230-ee36e21e9a47\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/5/2/c/0/ab05-271e-498c-8230-ee36e21e9a47\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/5/2/c/0/ab05-271e-498c-8230-ee36e21e9a47\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/5/2/c/0/ab05-271e-498c-8230-ee36e21e9a47\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/5/2/c/0/ab05-271e-498c-8230-ee36e21e9a47\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/5/2/c/0/ab05-271e-498c-8230-ee36e21e9a47\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/cultdust/\",
+        \n            \"username\": \"cultdust\", \n            \"name\": \"CultDust\",
+        \n            \"key\": \"/cultdust/\", \n            \"pictures\": {\n                \"medium\":
+        \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/2/a/0/b/51e0-bc5d-49b2-9f87-bc926c63c1b7\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/2/a/0/b/51e0-bc5d-49b2-9f87-bc926c63c1b7\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/2/a/0/b/51e0-bc5d-49b2-9f87-bc926c63c1b7\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/2/a/0/b/51e0-bc5d-49b2-9f87-bc926c63c1b7\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/2/a/0/b/51e0-bc5d-49b2-9f87-bc926c63c1b7\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/2/a/0/b/51e0-bc5d-49b2-9f87-bc926c63c1b7\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/2/a/0/b/51e0-bc5d-49b2-9f87-bc926c63c1b7\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/2/a/0/b/51e0-bc5d-49b2-9f87-bc926c63c1b7\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/theslowdrift/\",
+        \n            \"username\": \"theslowdrift\", \n            \"name\": \"The
+        Slow Drift\", \n            \"key\": \"/theslowdrift/\", \n            \"pictures\":
+        {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/8/6/8/e/708d-db9c-4871-b3ff-db9e32dac237.png\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/8/6/8/e/708d-db9c-4871-b3ff-db9e32dac237.png\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/8/6/8/e/708d-db9c-4871-b3ff-db9e32dac237.png\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/8/6/8/e/708d-db9c-4871-b3ff-db9e32dac237.png\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/8/6/8/e/708d-db9c-4871-b3ff-db9e32dac237.png\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/8/6/8/e/708d-db9c-4871-b3ff-db9e32dac237.png\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/8/6/8/e/708d-db9c-4871-b3ff-db9e32dac237.png\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/8/6/8/e/708d-db9c-4871-b3ff-db9e32dac237.png\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/Defectedrecords/\",
+        \n            \"username\": \"Defectedrecords\", \n            \"name\": \"Defected
+        Records\", \n            \"key\": \"/Defectedrecords/\", \n            \"pictures\":
+        {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/d/f/f/9/0b80-740c-4d78-8bcd-52a6eda91a76.jpg\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/d/f/f/9/0b80-740c-4d78-8bcd-52a6eda91a76.jpg\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/d/f/f/9/0b80-740c-4d78-8bcd-52a6eda91a76.jpg\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/d/f/f/9/0b80-740c-4d78-8bcd-52a6eda91a76.jpg\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/d/f/f/9/0b80-740c-4d78-8bcd-52a6eda91a76.jpg\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/d/f/f/9/0b80-740c-4d78-8bcd-52a6eda91a76.jpg\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/d/f/f/9/0b80-740c-4d78-8bcd-52a6eda91a76.jpg\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/d/f/f/9/0b80-740c-4d78-8bcd-52a6eda91a76.jpg\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/ninjatune/\",
+        \n            \"username\": \"ninjatune\", \n            \"name\": \"Ninja
+        Tune\", \n            \"key\": \"/ninjatune/\", \n            \"pictures\":
+        {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/f/0/0/d/2ff4-96bb-40a0-9001-e62cf41ce6fa\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/f/0/0/d/2ff4-96bb-40a0-9001-e62cf41ce6fa\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/f/0/0/d/2ff4-96bb-40a0-9001-e62cf41ce6fa\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/f/0/0/d/2ff4-96bb-40a0-9001-e62cf41ce6fa\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/f/0/0/d/2ff4-96bb-40a0-9001-e62cf41ce6fa\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/f/0/0/d/2ff4-96bb-40a0-9001-e62cf41ce6fa\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/f/0/0/d/2ff4-96bb-40a0-9001-e62cf41ce6fa\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/f/0/0/d/2ff4-96bb-40a0-9001-e62cf41ce6fa\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/opticecho/\",
+        \n            \"username\": \"opticecho\", \n            \"name\": \"Optic
+        Echo\", \n            \"key\": \"/opticecho/\", \n            \"pictures\":
+        {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/1/2/3/e/1fa9-396c-48e1-8121-96162008e060.jpg\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/1/2/3/e/1fa9-396c-48e1-8121-96162008e060.jpg\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/1/2/3/e/1fa9-396c-48e1-8121-96162008e060.jpg\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/1/2/3/e/1fa9-396c-48e1-8121-96162008e060.jpg\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/1/2/3/e/1fa9-396c-48e1-8121-96162008e060.jpg\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/1/2/3/e/1fa9-396c-48e1-8121-96162008e060.jpg\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/1/2/3/e/1fa9-396c-48e1-8121-96162008e060.jpg\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/1/2/3/e/1fa9-396c-48e1-8121-96162008e060.jpg\"\n
+        \           }\n        }, \n        {\n            \"url\": \"https://www.mixcloud.com/lowlight/\",
+        \n            \"username\": \"lowlight\", \n            \"name\": \"low light
+        mixes\", \n            \"key\": \"/lowlight/\", \n            \"pictures\":
+        {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/9/9/3/1/40f2-de42-4a1d-bc17-42f0fe219cf7\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/9/9/3/1/40f2-de42-4a1d-bc17-42f0fe219cf7\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/9/9/3/1/40f2-de42-4a1d-bc17-42f0fe219cf7\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/9/9/3/1/40f2-de42-4a1d-bc17-42f0fe219cf7\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/9/9/3/1/40f2-de42-4a1d-bc17-42f0fe219cf7\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/9/9/3/1/40f2-de42-4a1d-bc17-42f0fe219cf7\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/9/9/3/1/40f2-de42-4a1d-bc17-42f0fe219cf7\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/9/9/3/1/40f2-de42-4a1d-bc17-42f0fe219cf7\"\n
+        \           }\n        }\n    ]\n}"
+    http_version: 
+  recorded_at: Wed, 11 Apr 2018 00:42:06 GMT
+recorded_with: VCR 4.0.0

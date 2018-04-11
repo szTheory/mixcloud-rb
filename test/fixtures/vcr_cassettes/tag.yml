@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.mixcloud.com/tag/funk?limit=1&metadata=1&offset=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 11 Apr 2018 00:43:10 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Request-Id:
+      - 5e9816a82617c7cefee8480a1611c16d
+      Location:
+      - /tag/funk/?metadata=1&limit=1&offset=1&metadata=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    http_version: 
+  recorded_at: Wed, 11 Apr 2018 00:43:11 GMT
+- request:
+    method: get
+    uri: http://api.mixcloud.com/tag/funk/?limit=1&metadata=1&offset=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 11 Apr 2018 00:43:11 GMT
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Content-Length:
+      - '378'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Request-Id:
+      - c7b070e2ebfddd6bd5ea5a04bb621a8a
+      Access-Control-Allow-Origin:
+      - ! '*'
+    body:
+      encoding: US-ASCII
+      string: ! "{\n    \"url\": \"https://www.mixcloud.com/discover/funk/\", \n    \"type\":
+        \"tag\", \n    \"name\": \"Funk\", \n    \"key\": \"/discover/funk/\", \n
+        \   \"metadata\": {\n        \"connections\": {\n            \"popular\":
+        \"http://api.mixcloud.com/tag/funk/popular/\", \n            \"new\": \"http://api.mixcloud.com/tag/funk/new/\",
+        \n            \"hot\": \"http://api.mixcloud.com/tag/funk/hot/\"\n        }\n
+        \   }\n}"
+    http_version: 
+  recorded_at: Wed, 11 Apr 2018 00:43:11 GMT
+recorded_with: VCR 4.0.0

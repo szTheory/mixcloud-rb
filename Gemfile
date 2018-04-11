@@ -1,7 +1,7 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem 'hashie', '~>0.2.0'
-gem 'httparty', '~>0.5.2'
-
-group :development do	
-end
+gemspec
+gem 'rake'
+gem 'pry'
+gem 'vcr'
+gem 'webmock'

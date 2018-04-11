@@ -20,4 +20,4 @@ task :release => :build do
   system "gem push mixcloud-rb-#{MixCloud::VERSION}.gem"
 end
 
-task :default => :build
+task :default => :test

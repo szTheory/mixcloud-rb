@@ -1,91 +1,130 @@
-require "mixcloud"
-require "test/unit"
- 
+require_relative "./test_helper.rb"
+
 class TestMixCloudUser < Test::Unit::TestCase
+
+  USERNAME = 'spartacus'
+  USER_HUMANIZED = 'Spartacus'
  
   def setup
-    @user = MixCloud::User.find("spartacus", { :limit => 1, :offset => 1, :metadata => 1 } )
-    @user_feed = @user.feed
-    @user_comments = @user.comments
-    @user_followers = @user.followers
-    @user_following = @user.following    
-    @user_favorites = @user.favorites
-    @user_cloudcasts = @user.cloudcasts
-    @user_listens = @user.listens
+    VCR.use_cassette("user") do
+      @user = MixCloud::User.find(USERNAME, { :limit => 1, :offset => 1, :metadata => 1 } )
+    end
+    VCR.use_cassette("feed") do
+      @user_feed = @user.feed
+    end
+    VCR.use_cassette("comments") do
+      @user_comments = @user.comments
+    end
+    VCR.use_cassette("cloudcasts") do
+      @user_cloudcasts = @user.cloudcasts
+    end
+    VCR.use_cassette("followers") do
+      @user_followers = @user.followers
+    end
+    VCR.use_cassette("following") do
+      @user_following = @user.following    
+    end
+    VCR.use_cassette("favorites") do
+      @user_favorites = @user.favorites
+    end
+    VCR.use_cassette("listens") do
+      @user_listens = @user.listens
+    end
   end  
  
   def test_user_properties        
-    assert_equal(@user.username, "spartacus")
-    assert_equal(@user.city,  'London')
-    assert_equal(@user.cloudcast_count, 3)
-    assert_equal(@user.following_count, 26)
-    assert_equal(@user.url,  'http://www.mixcloud.com/spartacus/')    
-    assert_equal(@user.pictures.length, 6)
-    assert_equal(@user.listen_count, 373)
-    assert_equal(@user.biog, "Part of the Mixcloud team - since Mixcloud was just a good idea.")
-    assert_equal(@user.key,  '/spartacus/')    
-    assert_equal(@user.country, "United Kingdom")
-    assert_equal(@user.type, 'user')
-    assert_equal(@user.name, 'Spartacus')    
+    assert_equal(USERNAME, @user.username)
+    assert_equal('London', @user.city)
+    assert_block { @user.cloudcast_count.is_a?(Fixnum) }
+    assert_block { @user.following_count.is_a?(Fixnum) }
+    assert_equal("https://www.mixcloud.com/#{USERNAME}/", @user.url)    
+    assert_block { @user.pictures.length.is_a?(Fixnum) }
+    assert_block { @user.listen_count.is_a?(Fixnum) }
+    assert_equal("Part of the Mixcloud team - since Mixcloud was just a good idea.", @user.biog, )
+    assert_equal("/#{USERNAME}/", @user.key)    
+    assert_equal("United Kingdom", @user.country)
+    assert_equal('user', @user.type)
+    assert_equal(USER_HUMANIZED, @user.name)  
   end
   
   def test_user_has_metadata
-    assert_equal(@user.metadata.size, 7)    
+    assert_block { @user.metadata.size.is_a?(Fixnum) }
   end
   
   def test_user_metadata_properties
-    assert_equal(@user.metadata[:feed], MixCloud::BASE_URL + '/spartacus/feed/' )    
-    assert_equal(@user.metadata[:comments], MixCloud::BASE_URL + '/spartacus/comments/' )            
-    assert_equal(@user.metadata[:followers], MixCloud::BASE_URL + '/spartacus/followers/' )
-    assert_equal(@user.metadata[:favorites], MixCloud::BASE_URL + '/spartacus/favorites/' )
-    assert_equal(@user.metadata[:following], MixCloud::BASE_URL + '/spartacus/following/' )
-    assert_equal(@user.metadata[:listens], MixCloud::BASE_URL + '/spartacus/listens/' )                    
+    assert_equal(MixCloud::BASE_URL + "/#{USERNAME}/feed/", @user.metadata[:feed])    
+    assert_equal(MixCloud::BASE_URL + "/#{USERNAME}/comments/", @user.metadata[:comments])            
+    assert_equal(MixCloud::BASE_URL + "/#{USERNAME}/followers/", @user.metadata[:followers])
+    assert_equal(MixCloud::BASE_URL + "/#{USERNAME}/favorites/", @user.metadata[:favorites])
+    assert_equal(MixCloud::BASE_URL + "/#{USERNAME}/following/", @user.metadata[:following])
+    assert_equal(MixCloud::BASE_URL + "/#{USERNAME}/listens/", @user.metadata[:listens])                    
   end
   
   def test_user_feed_properties
-    assert_equal(@user_feed['data'].length, 1)
-    assert_equal(@user_feed['data'][0]['from']['url'], 'http://www.mixcloud.com/spartacus/')    
+    assert_block { @user_feed['data'].length.is_a?(Fixnum) }
+    assert_equal("https://www.mixcloud.com/#{USERNAME}/", @user_feed['data'][0]['from']['url'])    
   end
   
   def test_user_comments_properties    
-    assert_equal(@user_comments['paging']['previous'],'http://api.mixcloud.com/spartacus/comments/?metadata=1&limit=1&offset=0')    
-    assert_equal(@user_comments['paging']['next'],'http://api.mixcloud.com/spartacus/comments/?metadata=1&limit=1&offset=2')
-
-    assert_equal(@user_comments['data'].nil?, false)        
-    assert_equal(@user_comments['name'],'Comments on Spartacus\'s profile')    
+    assert_block do
+      @user_comments['paging']['previous'].include?("#{MixCloud::BASE_URL}/#{USERNAME}/comments/?limit=20&since=")
+    end
+    assert_block do
+      @user_comments['paging']['next'].include?("#{MixCloud::BASE_URL}/#{USERNAME}/comments/?limit=20&until=")
+    end
+    assert_equal(false, @user_comments['data'].nil?)        
+    assert_equal("Comments on #{USER_HUMANIZED}\'s profile", @user_comments['name'])    
   end
   
   def test_user_followers_properties
-    assert_equal(@user_followers['paging']['previous'],'http://api.mixcloud.com/spartacus/followers/?metadata=1&limit=1&offset=0')    
-    assert_equal(@user_followers['paging']['next'],'http://api.mixcloud.com/spartacus/followers/?metadata=1&limit=1&offset=2')            
-    assert_equal(@user_followers['data'].nil?, false)          
-    assert_equal(@user_followers['name'],'Spartacus\'s followers')    
+    assert_block do
+      @user_followers['paging']['previous'].include?("#{MixCloud::BASE_URL}/#{USERNAME}/followers/?limit=20&since=")
+    end
+    assert_block do
+      @user_followers['paging']['next'].include?("#{MixCloud::BASE_URL}/#{USERNAME}/followers/?limit=20&until=")
+    end
+    assert_equal(false, @user_followers['data'].nil?)          
+    assert_equal("#{USER_HUMANIZED}\'s followers", @user_followers['name'])    
   end
   
   def test_user_favorites_properties
-    assert_equal(@user_favorites['paging']['previous'],'http://api.mixcloud.com/spartacus/favorites/?metadata=1&limit=1&offset=0')    
-    assert_equal(@user_favorites['paging']['next'],'http://api.mixcloud.com/spartacus/favorites/?metadata=1&limit=1&offset=2')        
-    assert_equal(@user_favorites['data'].nil?, false)
-    assert_equal(@user_favorites['name'],'Spartacus\'s favorites')
+    assert_block do
+      @user_favorites['paging']['previous'].include?("#{MixCloud::BASE_URL}/#{USERNAME}/favorites/?limit=20&since=")
+    end
+    assert_block do
+      @user_favorites['paging']['next'].include?("#{MixCloud::BASE_URL}/#{USERNAME}/favorites/?limit=20&until=")
+    end
+    assert_equal(false, @user_favorites['data'].nil?)
+    assert_equal("#{USER_HUMANIZED}\'s favorites", @user_favorites['name'])
   end
   
   def test_user_following_properties
-    assert_equal(@user_following['paging']['previous'],'http://api.mixcloud.com/spartacus/following/?metadata=1&limit=1&offset=0')    
-    assert_equal(@user_following['paging']['next'],'http://api.mixcloud.com/spartacus/following/?metadata=1&limit=1&offset=2')
-    assert_equal(@user_following['data'].nil?, false)
+    assert_block do
+      @user_following['paging']['previous'].include?("#{MixCloud::BASE_URL}/#{USERNAME}/following/?limit=20&since=")
+    end
+    assert_block do
+      @user_following['paging']['next'].include?("#{MixCloud::BASE_URL}/#{USERNAME}/following/?limit=20&until=")
+    end
+    assert_equal(false, @user_following['data'].nil?)
   end
   
   def test_user_cloudcasts_properties
-    assert_equal(@user_cloudcasts['paging']['previous'],'http://api.mixcloud.com/spartacus/cloudcasts/?metadata=1&limit=1&offset=0')            
-    assert_equal(@user_cloudcasts['data'].nil?, false)      
-    assert_equal(@user_cloudcasts['name'],'Spartacus\'s Cloudcasts')
+    assert_block do
+      @user_cloudcasts['paging']['previous'].include?("#{MixCloud::BASE_URL}/#{USERNAME}/cloudcasts/?limit=20&since=")
+    end
+    assert_equal(false, @user_cloudcasts['data'].nil?)      
+    assert_equal("#{USER_HUMANIZED}\'s Cloudcasts", @user_cloudcasts['name'])
   end
   
   def test_user_listens_properties
-    assert_equal(@user_listens['paging']['previous'],'http://api.mixcloud.com/spartacus/listens/?metadata=1&limit=1&offset=0')    
-    assert_equal(@user_listens['paging']['next'],'http://api.mixcloud.com/spartacus/listens/?metadata=1&limit=1&offset=2')            
-    assert_equal(@user_listens['data'].nil?, false)       
-    assert_equal(@user_listens['name'],'Spartacus\'s listens')    
+    assert_block do
+      @user_listens['paging']['previous'].include?("#{MixCloud::BASE_URL}/#{USERNAME}/listens/?limit=20&since=")
+    end
+    assert_block do
+      @user_listens['paging']['next'].include?("#{MixCloud::BASE_URL}/#{USERNAME}/listens/?limit=20&until=")
+    end
+    assert_equal(false, @user_listens['data'].nil?)       
+    assert_equal("#{USER_HUMANIZED}\'s listens", @user_listens['name'])    
   end
     
 end

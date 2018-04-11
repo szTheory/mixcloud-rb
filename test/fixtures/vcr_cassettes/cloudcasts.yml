@@ -1,0 +1,228 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.mixcloud.com/spartacus/cloudcasts/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 11 Apr 2018 00:42:05 GMT
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Content-Length:
+      - '20006'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Request-Id:
+      - a9ed904b25c4bf4e7a1f0a64bf3dc5e6
+      Access-Control-Allow-Origin:
+      - ! '*'
+    body:
+      encoding: US-ASCII
+      string: ! "{\n    \"paging\": {\n        \"previous\": \"http://api.mixcloud.com/spartacus/cloudcasts/?limit=20&since=2014-09-10+14%3A42%3A03\"\n
+        \   }, \n    \"data\": [\n        {\n            \"tags\": [\n                {\n
+        \                   \"url\": \"https://www.mixcloud.com/discover/chillout/\",
+        \n                    \"name\": \"Chillout\", \n                    \"key\":
+        \"/discover/chillout/\"\n                }, \n                {\n                    \"url\":
+        \"https://www.mixcloud.com/discover/soundtrack/\", \n                    \"name\":
+        \"Soundtrack\", \n                    \"key\": \"/discover/soundtrack/\"\n
+        \               }, \n                {\n                    \"url\": \"https://www.mixcloud.com/discover/modern-classical/\",
+        \n                    \"name\": \"Modern classical\", \n                    \"key\":
+        \"/discover/modern-classical/\"\n                }\n            ], \n            \"play_count\":
+        962, \n            \"user\": {\n                \"url\": \"https://www.mixcloud.com/spartacus/\",
+        \n                \"username\": \"spartacus\", \n                \"name\":
+        \"Spartacus\", \n                \"key\": \"/spartacus/\", \n                \"pictures\":
+        {\n                    \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\"\n
+        \               }\n            }, \n            \"key\": \"/spartacus/cinematic-soundscapes/\",
+        \n            \"created_time\": \"2014-09-10T14:42:03Z\", \n            \"audio_length\":
+        2631, \n            \"slug\": \"cinematic-soundscapes\", \n            \"favorite_count\":
+        35, \n            \"listener_count\": 283, \n            \"name\": \"Cinematic
+        Soundscapes\", \n            \"url\": \"https://www.mixcloud.com/spartacus/cinematic-soundscapes/\",
+        \n            \"pictures\": {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/extaudio/1/a/6/1/eaa7-151a-48a9-96f6-12df7773a25d.jpg\",
+        \n                \"768wx768h\": \"https://thumbnailer.mixcloud.com/unsafe/768x768/extaudio/1/a/6/1/eaa7-151a-48a9-96f6-12df7773a25d.jpg\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/extaudio/1/a/6/1/eaa7-151a-48a9-96f6-12df7773a25d.jpg\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/1/a/6/1/eaa7-151a-48a9-96f6-12df7773a25d.jpg\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/1/a/6/1/eaa7-151a-48a9-96f6-12df7773a25d.jpg\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/extaudio/1/a/6/1/eaa7-151a-48a9-96f6-12df7773a25d.jpg\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/extaudio/1/a/6/1/eaa7-151a-48a9-96f6-12df7773a25d.jpg\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/extaudio/1/a/6/1/eaa7-151a-48a9-96f6-12df7773a25d.jpg\",
+        \n                \"1024wx1024h\": \"https://thumbnailer.mixcloud.com/unsafe/1024x1024/extaudio/1/a/6/1/eaa7-151a-48a9-96f6-12df7773a25d.jpg\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/extaudio/1/a/6/1/eaa7-151a-48a9-96f6-12df7773a25d.jpg\"\n
+        \           }, \n            \"repost_count\": 6, \n            \"updated_time\":
+        \"2014-09-10T14:16:00Z\", \n            \"comment_count\": 2\n        }, \n
+        \       {\n            \"tags\": [\n                {\n                    \"url\":
+        \"https://www.mixcloud.com/discover/chillout/\", \n                    \"name\":
+        \"Chillout\", \n                    \"key\": \"/discover/chillout/\"\n                },
+        \n                {\n                    \"url\": \"https://www.mixcloud.com/discover/jazz/\",
+        \n                    \"name\": \"Jazz\", \n                    \"key\": \"/discover/jazz/\"\n
+        \               }, \n                {\n                    \"url\": \"https://www.mixcloud.com/discover/ambient/\",
+        \n                    \"name\": \"Ambient\", \n                    \"key\":
+        \"/discover/ambient/\"\n                }, \n                {\n                    \"url\":
+        \"https://www.mixcloud.com/discover/modern-classical/\", \n                    \"name\":
+        \"Modern classical\", \n                    \"key\": \"/discover/modern-classical/\"\n
+        \               }\n            ], \n            \"play_count\": 2146, \n            \"user\":
+        {\n                \"url\": \"https://www.mixcloud.com/spartacus/\", \n                \"username\":
+        \"spartacus\", \n                \"name\": \"Spartacus\", \n                \"key\":
+        \"/spartacus/\", \n                \"pictures\": {\n                    \"medium\":
+        \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\"\n
+        \               }\n            }, \n            \"key\": \"/spartacus/a-chilled-playlist/\",
+        \n            \"created_time\": \"2014-08-27T13:15:44Z\", \n            \"audio_length\":
+        4567, \n            \"slug\": \"a-chilled-playlist\", \n            \"favorite_count\":
+        121, \n            \"listener_count\": 857, \n            \"name\": \"A chilled
+        playlist\", \n            \"url\": \"https://www.mixcloud.com/spartacus/a-chilled-playlist/\",
+        \n            \"pictures\": {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/extaudio/0/0/b/e/3819-dc71-4deb-bdc6-fb8069d5f8fe.jpg\",
+        \n                \"768wx768h\": \"https://thumbnailer.mixcloud.com/unsafe/768x768/extaudio/0/0/b/e/3819-dc71-4deb-bdc6-fb8069d5f8fe.jpg\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/extaudio/0/0/b/e/3819-dc71-4deb-bdc6-fb8069d5f8fe.jpg\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/0/0/b/e/3819-dc71-4deb-bdc6-fb8069d5f8fe.jpg\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/0/0/b/e/3819-dc71-4deb-bdc6-fb8069d5f8fe.jpg\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/extaudio/0/0/b/e/3819-dc71-4deb-bdc6-fb8069d5f8fe.jpg\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/extaudio/0/0/b/e/3819-dc71-4deb-bdc6-fb8069d5f8fe.jpg\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/extaudio/0/0/b/e/3819-dc71-4deb-bdc6-fb8069d5f8fe.jpg\",
+        \n                \"1024wx1024h\": \"https://thumbnailer.mixcloud.com/unsafe/1024x1024/extaudio/0/0/b/e/3819-dc71-4deb-bdc6-fb8069d5f8fe.jpg\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/extaudio/0/0/b/e/3819-dc71-4deb-bdc6-fb8069d5f8fe.jpg\"\n
+        \           }, \n            \"repost_count\": 22, \n            \"updated_time\":
+        \"2014-08-27T13:08:59Z\", \n            \"comment_count\": 8\n        }, \n
+        \       {\n            \"tags\": [\n                {\n                    \"url\":
+        \"https://www.mixcloud.com/discover/electro-house/\", \n                    \"name\":
+        \"Electro house\", \n                    \"key\": \"/discover/electro-house/\"\n
+        \               }, \n                {\n                    \"url\": \"https://www.mixcloud.com/discover/deep-house/\",
+        \n                    \"name\": \"Deep house\", \n                    \"key\":
+        \"/discover/deep-house/\"\n                }, \n                {\n                    \"url\":
+        \"https://www.mixcloud.com/discover/tech-house/\", \n                    \"name\":
+        \"Tech house\", \n                    \"key\": \"/discover/tech-house/\"\n
+        \               }\n            ], \n            \"play_count\": 936, \n            \"user\":
+        {\n                \"url\": \"https://www.mixcloud.com/spartacus/\", \n                \"username\":
+        \"spartacus\", \n                \"name\": \"Spartacus\", \n                \"key\":
+        \"/spartacus/\", \n                \"pictures\": {\n                    \"medium\":
+        \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\"\n
+        \               }\n            }, \n            \"key\": \"/spartacus/0xf4240/\",
+        \n            \"created_time\": \"2011-04-23T00:16:32Z\", \n            \"audio_length\":
+        2756, \n            \"slug\": \"0xf4240\", \n            \"favorite_count\":
+        18, \n            \"listener_count\": 173, \n            \"name\": \"0xf4240\",
+        \n            \"url\": \"https://www.mixcloud.com/spartacus/0xf4240/\", \n
+        \           \"pictures\": {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/extaudio/3/d/4/4/7800-ca46-461f-a2ec-15092505fe72.jpg\",
+        \n                \"768wx768h\": \"https://thumbnailer.mixcloud.com/unsafe/768x768/extaudio/3/d/4/4/7800-ca46-461f-a2ec-15092505fe72.jpg\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/extaudio/3/d/4/4/7800-ca46-461f-a2ec-15092505fe72.jpg\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/3/d/4/4/7800-ca46-461f-a2ec-15092505fe72.jpg\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/3/d/4/4/7800-ca46-461f-a2ec-15092505fe72.jpg\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/extaudio/3/d/4/4/7800-ca46-461f-a2ec-15092505fe72.jpg\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/extaudio/3/d/4/4/7800-ca46-461f-a2ec-15092505fe72.jpg\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/extaudio/3/d/4/4/7800-ca46-461f-a2ec-15092505fe72.jpg\",
+        \n                \"1024wx1024h\": \"https://thumbnailer.mixcloud.com/unsafe/1024x1024/extaudio/3/d/4/4/7800-ca46-461f-a2ec-15092505fe72.jpg\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/extaudio/3/d/4/4/7800-ca46-461f-a2ec-15092505fe72.jpg\"\n
+        \           }, \n            \"repost_count\": 1, \n            \"updated_time\":
+        \"2013-10-15T23:36:44Z\", \n            \"comment_count\": 3\n        }, \n
+        \       {\n            \"tags\": [\n                {\n                    \"url\":
+        \"https://www.mixcloud.com/discover/idm/\", \n                    \"name\":
+        \"Idm\", \n                    \"key\": \"/discover/idm/\"\n                },
+        \n                {\n                    \"url\": \"https://www.mixcloud.com/discover/originals/\",
+        \n                    \"name\": \"Originals\", \n                    \"key\":
+        \"/discover/originals/\"\n                }, \n                {\n                    \"url\":
+        \"https://www.mixcloud.com/discover/ambient/\", \n                    \"name\":
+        \"Ambient\", \n                    \"key\": \"/discover/ambient/\"\n                }\n
+        \           ], \n            \"play_count\": 1009, \n            \"user\":
+        {\n                \"url\": \"https://www.mixcloud.com/spartacus/\", \n                \"username\":
+        \"spartacus\", \n                \"name\": \"Spartacus\", \n                \"key\":
+        \"/spartacus/\", \n                \"pictures\": {\n                    \"medium\":
+        \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\"\n
+        \               }\n            }, \n            \"key\": \"/spartacus/lambiance/\",
+        \n            \"created_time\": \"2010-03-11T21:53:08Z\", \n            \"audio_length\":
+        3902, \n            \"slug\": \"lambiance\", \n            \"favorite_count\":
+        25, \n            \"listener_count\": 191, \n            \"name\": \"L'ambiance\",
+        \n            \"url\": \"https://www.mixcloud.com/spartacus/lambiance/\",
+        \n            \"pictures\": {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/extaudio/f/7/2/8/7047-1761-453b-a88a-e6176e4a52aa.jpg\",
+        \n                \"768wx768h\": \"https://thumbnailer.mixcloud.com/unsafe/768x768/extaudio/f/7/2/8/7047-1761-453b-a88a-e6176e4a52aa.jpg\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/extaudio/f/7/2/8/7047-1761-453b-a88a-e6176e4a52aa.jpg\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/f/7/2/8/7047-1761-453b-a88a-e6176e4a52aa.jpg\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/f/7/2/8/7047-1761-453b-a88a-e6176e4a52aa.jpg\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/extaudio/f/7/2/8/7047-1761-453b-a88a-e6176e4a52aa.jpg\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/extaudio/f/7/2/8/7047-1761-453b-a88a-e6176e4a52aa.jpg\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/extaudio/f/7/2/8/7047-1761-453b-a88a-e6176e4a52aa.jpg\",
+        \n                \"1024wx1024h\": \"https://thumbnailer.mixcloud.com/unsafe/1024x1024/extaudio/f/7/2/8/7047-1761-453b-a88a-e6176e4a52aa.jpg\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/extaudio/f/7/2/8/7047-1761-453b-a88a-e6176e4a52aa.jpg\"\n
+        \           }, \n            \"repost_count\": 0, \n            \"updated_time\":
+        \"2013-11-27T09:25:50Z\", \n            \"comment_count\": 5\n        }, \n
+        \       {\n            \"tags\": [\n                {\n                    \"url\":
+        \"https://www.mixcloud.com/discover/funky-house/\", \n                    \"name\":
+        \"Funky house\", \n                    \"key\": \"/discover/funky-house/\"\n
+        \               }, \n                {\n                    \"url\": \"https://www.mixcloud.com/discover/funk/\",
+        \n                    \"name\": \"Funk\", \n                    \"key\": \"/discover/funk/\"\n
+        \               }, \n                {\n                    \"url\": \"https://www.mixcloud.com/discover/soul/\",
+        \n                    \"name\": \"Soul\", \n                    \"key\": \"/discover/soul/\"\n
+        \               }\n            ], \n            \"play_count\": 5416, \n            \"user\":
+        {\n                \"url\": \"https://www.mixcloud.com/spartacus/\", \n                \"username\":
+        \"spartacus\", \n                \"name\": \"Spartacus\", \n                \"key\":
+        \"/spartacus/\", \n                \"pictures\": {\n                    \"medium\":
+        \"https://thumbnailer.mixcloud.com/unsafe/100x100/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\",
+        \n                    \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/profile/d/f/e/f/d1a8-3932-47e1-bbd3-ac5fd2144d80.jpg\"\n
+        \               }\n            }, \n            \"key\": \"/spartacus/party-time/\",
+        \n            \"created_time\": \"2009-08-02T16:55:01Z\", \n            \"audio_length\":
+        3361, \n            \"slug\": \"party-time\", \n            \"favorite_count\":
+        20, \n            \"listener_count\": 191, \n            \"name\": \"Party
+        Time\", \n            \"url\": \"https://www.mixcloud.com/spartacus/party-time/\",
+        \n            \"pictures\": {\n                \"medium\": \"https://thumbnailer.mixcloud.com/unsafe/100x100/extaudio/6/1/a/1/279f-e3c0-4871-aa8e-c4cf5466edb8.png\",
+        \n                \"768wx768h\": \"https://thumbnailer.mixcloud.com/unsafe/768x768/extaudio/6/1/a/1/279f-e3c0-4871-aa8e-c4cf5466edb8.png\",
+        \n                \"320wx320h\": \"https://thumbnailer.mixcloud.com/unsafe/320x320/extaudio/6/1/a/1/279f-e3c0-4871-aa8e-c4cf5466edb8.png\",
+        \n                \"extra_large\": \"https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/6/1/a/1/279f-e3c0-4871-aa8e-c4cf5466edb8.png\",
+        \n                \"large\": \"https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/6/1/a/1/279f-e3c0-4871-aa8e-c4cf5466edb8.png\",
+        \n                \"640wx640h\": \"https://thumbnailer.mixcloud.com/unsafe/640x640/extaudio/6/1/a/1/279f-e3c0-4871-aa8e-c4cf5466edb8.png\",
+        \n                \"medium_mobile\": \"https://thumbnailer.mixcloud.com/unsafe/80x80/extaudio/6/1/a/1/279f-e3c0-4871-aa8e-c4cf5466edb8.png\",
+        \n                \"small\": \"https://thumbnailer.mixcloud.com/unsafe/25x25/extaudio/6/1/a/1/279f-e3c0-4871-aa8e-c4cf5466edb8.png\",
+        \n                \"1024wx1024h\": \"https://thumbnailer.mixcloud.com/unsafe/1024x1024/extaudio/6/1/a/1/279f-e3c0-4871-aa8e-c4cf5466edb8.png\",
+        \n                \"thumbnail\": \"https://thumbnailer.mixcloud.com/unsafe/50x50/extaudio/6/1/a/1/279f-e3c0-4871-aa8e-c4cf5466edb8.png\"\n
+        \           }, \n            \"repost_count\": 3, \n            \"updated_time\":
+        \"2013-10-15T13:48:53Z\", \n            \"comment_count\": 3\n        }\n
+        \   ], \n    \"name\": \"Spartacus's Cloudcasts\"\n}"
+    http_version: 
+  recorded_at: Wed, 11 Apr 2018 00:42:05 GMT
+recorded_with: VCR 4.0.0

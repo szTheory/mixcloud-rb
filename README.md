@@ -4,27 +4,25 @@
 
 == DESCRIPTION:
 
-Since i like so much mixcloud.com i wrote this ruby wrapper for their api, you may get all the info on mixcloud.com with exceptions to the music which will come soon i hope.
+Since I like mixcloud.com so much I wrote this ruby wrapper for their API. You can get all the info on mixcloud.com with the exception of the music, which will come soon I hope.
 
-You can find their api at http://api.mixcloud.com/
+You can find their API at http://api.mixcloud.com/
 
 == FEATURES:
 
 Data you can retrieve using this wrapper:
-
+  
     Cloudcast
     User    
     Tag	    
-    Artist	    
+    Artist
     Track	    
     Featured category
 
 
-== POST FEATURES
-
 == INSTALL:
 
-    gem isntall mixcloud-rb
+    gem install mixcloud-rb
 
 == SYNOPSIS:
 
@@ -33,7 +31,8 @@ Data you can retrieve using this wrapper:
 
 == DEVELOPERS:
 
-    
+* JSilva
+* szTheory
 
 == LICENSE:
 
