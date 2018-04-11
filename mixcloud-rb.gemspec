@@ -12,8 +12,8 @@ Gem::Specification.new do |s|
   s.summary     = %q{Ruby wrapper for the mixcloud.com API}
   s.description = %q{Ruby wrapper for the mixcloud.com API}
   
-  s.add_development_dependency 'hashie', '~>0.2.0'
-  s.add_development_dependency 'httparty', '~>0.13.7'
+  s.add_development_dependency 'hashie', '~> 2.1.2'
+  s.add_development_dependency 'httparty', '~> 0.13.7'
   
   s.files         = Dir.glob("{lib}/**/*")
   s.test_files    = Dir.glob("{test}/**/*")
