@@ -17,12 +17,15 @@ GEM
       multi_xml (>= 0.5.2)
     json (1.8.6)
     method_source (0.9.0)
+    minitest (4.7.5)
     multi_xml (0.6.0)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     rake (12.2.1)
     safe_yaml (1.0.4)
+    test-unit-minitest (0.9.1)
+      minitest (~> 4.7)
     vcr (4.0.0)
     webmock (2.3.2)
       addressable (>= 2.3.6)
@@ -38,6 +41,7 @@ DEPENDENCIES
   mixcloud-rb!
   pry
   rake
+  test-unit-minitest
   vcr
   webmock
 
