@@ -1,12 +1,12 @@
-= MixCloud API ruby wrapper
+= MixCloud API ruby wrapper {<img src="https://travis-ci.org/jsilva/mixcloud-rb.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/jsilva/mixcloud-rb]
 
-* https://github.com/JSilva/mixcloud-rb
+https://github.com/JSilva/mixcloud-rb
 
 == DESCRIPTION:
 
 Since I like mixcloud.com so much I wrote this ruby wrapper for their API. You can get all the info on mixcloud.com with the exception of the music, which will come soon I hope.
 
-You can find their API at http://api.mixcloud.com/
+You can find their API at http://api.mixcloud.com
 
 == FEATURES:
 
