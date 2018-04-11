@@ -14,10 +14,5 @@ desc "Build the gem"
 task :build do
   system "gem build mixcloud-rb.gemspec"
 end
- 
-desc "Build and release the gem"
-task :release => :build do
-  system "gem push mixcloud-rb-#{MixCloud::VERSION}.gem"
-end
 
 task :default => :test
